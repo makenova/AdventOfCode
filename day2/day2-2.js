@@ -3,9 +3,9 @@ var readinput = require('../readinput');
 readinput(2).then((input)=>{
 
   var result = input.split('\n')
-               .map((v)=>{ return v.split('x').map((v)=>{return parseInt(v);})})
-               .map((v)=>{ return ribbonRequired.apply(null, v) })
-               .reduce((old, newV) => { return old + newV}, 0)
+               .map((v)=>{return v.split('x').map((v)=>{return parseInt(v);});})
+               .map((v)=>{ return ribbonRequired.apply(null, v);})
+               .reduce((old, newV) => { return old + newV; }, 0);
 
   console.log( result);
 });

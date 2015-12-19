@@ -14,5 +14,5 @@ readinput(1)
 		  	console.log(`The position that takes SATAN to the basement is ${i + 1}`);
 		  	break;
 		  }
-		};
+		}
 	});

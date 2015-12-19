@@ -9,7 +9,7 @@ readinput(1)
 		    floor++;
 		  else if (input[i] === ')')
 		    floor--;
-		};
+		}
 
 		console.log(floor);
 	});
