@@ -6,7 +6,6 @@ var santasLocation = {houses:{'0,0':1}, currentLocation:'0,0', visitedLocations:
 var roboLocation = {houses:{'0,0':1}, currentLocation:'0,0', visitedLocations: 1};
 
 readinput(3).then((input) => {
-  // var input = "^v";
   input.split('').filter((val, index)=>{return index % 2 !== 0;})
                  .forEach((val)=>{santasLilHelper.updateLocation(val, santasLocation);});
   
