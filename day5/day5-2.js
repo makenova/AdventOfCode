@@ -5,8 +5,8 @@ readinput(5).then((input) => {
   var strings = input.split('\n');
 
   var niceStrings = strings.filter((string=>{
-    return helper.isNiceString(string);
+    return helper.isNewNiceString(string);
   }));
 
-  console.log(`There are ${niceStrings.length} nice strings out of ${strings.length} strings`);
+  console.log(`There are ${niceStrings.length} new nice strings out of ${strings.length} strings`);
 });
